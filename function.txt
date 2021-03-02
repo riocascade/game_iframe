@@ -1,0 +1,5 @@
+<script>
+      $( "#pause" ).click(function() {
+        $("#my_iframe")[0].contentWindow.pauseGame();
+      });
+    </script>
