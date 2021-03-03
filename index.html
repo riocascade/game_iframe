@@ -34,6 +34,10 @@
         document.getElementById("my_iframe").contentWindow.pauseGame();
       }
 
+      function updateScore(score){
+        document.getElementById("score").value = score;
+      }
+
       function gameFinish(score){
         document.getElementById("score").value = score;
         alert("finish! your score"+score);

@@ -34,6 +34,10 @@
 			c3_callFunction("pause");
 		}
 
+		function updateScoreToParent(score){
+			parent.updateScore(score);
+		}
+
 		function gameComplete(score){
 			parent.gameFinish(score);
 		}
