@@ -2810,9 +2810,9 @@ value:this._waitTime,onedit:v=>this._waitTime=v},{name:prefix+".properties.fade-
 		C3.Behaviors.Fade.Acts.StartFade,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
 		C3.Plugins.Sprite.Cnds.IsAnimPlaying,
-		C3.Plugins.Browser.Acts.ExecJs,
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.Browser.Acts.ExecJs,
 		C3.Plugins.System.Cnds.Else,
 		C3.Plugins.Sprite.Cnds.OnDestroyed,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
@@ -2964,11 +2964,11 @@ value:this._waitTime,onedit:v=>this._waitTime=v},{name:prefix+".properties.fade-
 		() => "correct",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (and("updateScoreToParent(", v0.GetValue()) + ");");
+			return () => v0.GetValue();
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => v0.GetValue();
+			return () => (and("updateScoreToParent(", v0.GetValue()) + ");");
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
