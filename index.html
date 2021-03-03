@@ -18,7 +18,7 @@
         </iframe>
         <div class="mt-5 text-center">
             <div class="mb-3"> Music Icon: <i class="fa fa-music" style="font-size:24px;"></i></div>
-            <div>Score is: <input type="text" value="345"/></div>
+            <div>Score is: <input id="score" type="text" value="345"/></div>
             <div><button style="cursor: pointer; margin-top: 20px;margin-left: 20px;" id="pause" onclick="pauseGame()"> Pause/Play</button></div>
         </div>
     </div>
@@ -35,7 +35,8 @@
       }
 
       function gameFinish(score){
-        alert("finish!"+score);
+        document.getElementById("my_iframe").value(score);
+        alert("finish! your score"+score);
       }
      
     </script>
