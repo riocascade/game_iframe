@@ -30,9 +30,9 @@
 	<script src="scripts/main.js" type="module"></script>
 	<script src="scripts/register-sw.js" type="module"></script>
 	<script>
-	$( "#pause" ).click(function() {
-		$("#my_iframe")[0].contentWindow.pauseGame();
-	});
+	function pauseGame(){
+		c3_callFunction("pause");
+	}
 	</script>
 </body>
 </html>
