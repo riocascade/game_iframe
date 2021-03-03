@@ -14,7 +14,7 @@
   <body>
     <div>
         <!--<iframe src="https://elegant-meninsky-a68956.netlify.app/" allowtransparency="true" title="description" width="1000" height="500" style="background: transparent;" id="my_iframe"> -->
-          <iframe src="repo/index.html" allowtransparency="true" title="description" width="1000" height="500" style="background: transparent;" id="my_iframe"> 
+          <iframe src="repo/index.html?userid=3" allowtransparency="true" title="description" width="1000" height="500" style="background: transparent;" id="my_iframe"> 
         </iframe>
         <div class="mt-5 text-center">
             <div class="mb-3"> Music Icon: <i class="fa fa-music" style="font-size:24px;"></i></div>
@@ -32,6 +32,10 @@
     <script>
       function pauseGame(){
         document.getElementById("my_iframe").contentWindow.pauseGame();
+      }
+
+      function gameFinish(score){
+        alert("finish!"+score);
       }
      
     </script>

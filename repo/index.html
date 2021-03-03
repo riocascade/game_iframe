@@ -30,9 +30,13 @@
 	<script src="scripts/main.js" type="module"></script>
 	<script src="scripts/register-sw.js" type="module"></script>
 	<script>
-	function pauseGame(){
-		c3_callFunction("pause");
-	}
+		function pauseGame(){
+			c3_callFunction("pause");
+		}
+
+		function gameComplete(score){
+			parent.gameFinish(score);
+		}
 	</script>
 </body>
 </html>

@@ -1,5 +1,9 @@
 <script>
-      $( "#pause" ).click(function() {
-        $("#my_iframe")[0].contentWindow.pauseGame();
-      });
-    </script>
+		function pauseGame(){
+			c3_callFunction("pause");
+		}
+
+		function gameComplete(score){
+			parent.gameFinish(score);
+		}
+	</script>
